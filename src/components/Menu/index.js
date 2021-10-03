@@ -5,14 +5,14 @@ export default function Menu({ data, onItemClick }) {
     <div>
       {data.map(({ id, category, items }) => (
         <div key={id} data-testid="category">
-          <h1 data-testid="category-title">
+          <h2 data-testid="category-title">
             {category}
-          </h1>
+          </h2>
           {items.map(({ id: itemId, item }) => (
             <p
               key={itemId}
               data-testid="item"
-              onClick={onItemClick}
+              onClick={() => onItemClick({ id: itemId, item })}
             >
               {item}
             </p>
