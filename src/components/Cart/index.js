@@ -7,8 +7,8 @@ export default function Cart({ data, onSubmit, onIncreaseItemClick, onDecreaseIt
         <div key={id}>
           <p>
             <span data-testid="item">{item}</span>
-            <span data-testid="item-increase" onClick={() => { onIncreaseItemClick({ id }) }}>+</span>
-            <span data-testid="item-decrease" onClick={() => { onDecreaseItemClick({ id }) }}>-</span>
+            <button data-testid="item-increase" onClick={() => { onIncreaseItemClick({ id }) }}>+</button>
+            <button data-testid="item-decrease" onClick={() => { onDecreaseItemClick({ id }) }}>-</button>
             <span data-testid="item-count">x{count}</span>
           </p>
         </div>
