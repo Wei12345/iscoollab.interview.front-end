@@ -44,7 +44,7 @@ describe('Menu 正確顯示，正確觸發事件', () => {
     render(<Menu data={data} />)
 
     data.forEach(({ category }, index) => {
-      expect(screen.getAllByTestId('category')[index]).toHaveTextContent(category)
+      expect(screen.getAllByTestId('category-title')[index]).toHaveTextContent(category)
     })
   })
 
