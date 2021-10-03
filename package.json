@@ -5,7 +5,8 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --open --config webpack.dev.js",
-    "test": "jest"
+    "test": "jest",
+    "electron": "electron ./main.js"
   },
   "jest": {
     "testEnvironment": "jsdom"
@@ -19,6 +20,7 @@
     "babel-jest": "^27.2.4",
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
+    "electron": "^15.1.0",
     "eslint": "^7.32.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.10.0",
