@@ -2,6 +2,8 @@
 
 - 支援現代瀏覽器
 
+- [簡易的啟動 Electron](#Electron)
+
 ## 相關技術
 
 - [React](https://zh-hant.reactjs.org/)
@@ -11,6 +13,7 @@
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [ESLint](https://eslint.org/)
 - [Babel](https://babeljs.io/)
+- [Electron](https://www.electronjs.org/)
 
 ## 環境需求
 
@@ -37,6 +40,15 @@ npm run start
 ```
 npm ci
 npm run test
+```
+
+## Electron
+
+提供了簡易的啟動 electron
+
+```
+npm run build
+npm run electron
 ```
 
 ## Babel Config
