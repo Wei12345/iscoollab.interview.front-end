@@ -12,6 +12,12 @@
 - [ESLint](https://eslint.org/)
 - [Babel](https://babeljs.io/)
 
+## 環境需求
+
+使用了 Webpack5，需要至少 Node.js 10.13.0 (LTS)
+
+[Webpack 5 runs on Node.js version 10.13.0+.](https://webpack.js.org/concepts/#environment)
+
 ## 建置
 
 ```
