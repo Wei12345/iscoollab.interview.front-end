@@ -14,6 +14,7 @@ export default function App() {
 
   return (
     <Provider store={store}>
+      <h3>點擊 Go Menu And Cart 按鈕，進入菜單及購物車頁面；點擊 Go History 按鈕，進入訂單歷史頁面</h3>
       <button type="button" data-testid="go-menu-and-cart-button" onClick={() => { setPage(PAGE_MENU_AND_CART) }}>Go Menu And Cart</button>
       <button type="button" data-testid="go-history-button" onClick={() => { setPage(PAGE_ORDER) }}>Go History</button>
       {page === PAGE_MENU_AND_CART && (

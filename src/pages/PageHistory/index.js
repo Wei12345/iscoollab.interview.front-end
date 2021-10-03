@@ -14,6 +14,9 @@ export default function PageHistory() {
   }, [dispatch])
 
   return (
-    <History data={orders} onClear={handleClear} />
+    <>
+      <h3>按下 Clear 按鈕將清空訂單歷史紀錄</h3>
+      <History data={orders} onClear={handleClear} />
+    </>
   )
 }

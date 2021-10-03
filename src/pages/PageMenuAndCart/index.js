@@ -101,12 +101,14 @@ export default function PageMenuAndCart() {
     <>
       <div>
         <h1 data-testid="menu-title">Menu</h1>
+        <h3>點擊分類(Food, Drink, Others)下的物品(foodA, drinkQ, other1...)可以加入物品進入購物車(下方 Cart)</h3>
         <div data-testid="menu-content">
           <Menu data={menus} onItemClick={handleMenuItemClick} />
         </div>
       </div>
       <div>
         <h1 data-testid="cart-title">Cart</h1>
+        <h3>點擊物品的 +, - 將加入/減少物品數量，為 0 時將刪除物品，按下 Submit 將送出訂單，請點擊上方的 Go History 進入訂單歷史頁</h3>
         <div data-testid="cart-content">
           <Cart
             data={cart}
